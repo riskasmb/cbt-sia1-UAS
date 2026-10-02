@@ -24,6 +24,13 @@ class ExamResource extends Resource
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
     protected static ?string $recordTitleAttribute = 'title';
+    protected static ?string $navigationLabel = 'Data Ujian';
+
+    protected static ?string $modelLabel = 'Ujian';
+
+   protected static ?string $pluralModelLabel = 'Data Ujian';
+
+    protected static string|\UnitEnum|null $navigationGroup = 'Basis Data';
 
     public static function form(Schema $schema): Schema
     {
